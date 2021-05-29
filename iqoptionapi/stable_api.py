@@ -24,7 +24,7 @@ def nested_dict(n, type):
 class IQ_Option:
     __version__ = "6.8.9.1"
 
-    def __init__(self, email, password, active_account_type="PRACTICE"):
+    def __init__(self, email, password, active_account_type="REAL"):
         self.size = [1, 5, 10, 15, 30, 60, 120, 300, 600, 900, 1800,
                      3600, 7200, 14400, 28800, 43200, 86400, 604800, 2592000]
         self.email = email
