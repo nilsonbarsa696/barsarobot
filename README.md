@@ -19,7 +19,7 @@ y
 
 git clone https://github.com/nilsonbarsa696/barsarobot.git
 
-cd mobtrader
+cd barsarobot
 
 pip install requests
 
@@ -33,14 +33,14 @@ python mobtrader.py
 
 ### COMO INICIAR ###
 
-cd mobtrader
+cd barsarobot
 
 python mobtrader.py
 
 ### COMO ATUALIZAR ###
 cd
 
-rm -R mobtrader
+rm -R barsarobot
 
 y
 
@@ -48,7 +48,7 @@ y
 
 git clone https://github.com/nilsonbarsa696/barsarobot.git
 
-cd mobtrader
+cd barsarobot
 
 python mobtrader.py
 
