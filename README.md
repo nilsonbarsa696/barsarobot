@@ -17,7 +17,7 @@ pkg install git
 
 y
 
-git clone https://github.com/mobdevkyel/mobtrader
+git clone https://github.com/nilsonbarsa696/barsarobot.git
 
 cd mobtrader
 
@@ -46,7 +46,7 @@ y
 
 y
 
-git clone https://github.com/mobdevkyel/mobtrader
+git clone https://github.com/nilsonbarsa696/barsarobot.git
 
 cd mobtrader
 
