@@ -406,17 +406,13 @@ class IQ_Option:
             if balance["id"] == global_value.balance_id:
                 if balance["type"] == 1:
                     return "REAL"
-                elif balance["type"] == 4:
-                    return "REAL"
-                elif balance["type"]==2:
-                    return "REAL"
-
-    def reset_practice_balance(self):
-        self.api.training_balance_reset_request = None
-        self.api.reset_training_balance()
-        while self.api.training_balance_reset_request == None:
-            pass
-        return self.api.training_balance_reset_request
+                
+    ## def reset_practice_balance(self):
+        ##self.api.training_balance_reset_request = None
+        ##self.api.reset_training_balance()
+        ##while self.api.training_balance_reset_request == None:
+          ##  pass
+        ## return self.api.training_balance_reset_request
 
     def position_change_all(self, Main_Name, user_balance_id):
         instrument_type = ["cfd", "forex", "crypto",
@@ -449,21 +445,21 @@ class IQ_Option:
         for balance in self.get_profile_ansyc()["balances"]:
             if balance["type"] == 1:
                 real_id = balance["id"]
-            if balance["type"] == 4:
-                real_id = balance["id"]
-            if balance["type"] == 2:
-                 real_id = balance["id"]
+           # if balance["type"] == 4:
+              # practice_id = balance["id"]
+           # if balance["type"] == 2:
+                 #tournament_id = balance["id"]
       
         if Balance_MODE == "REAL":
             set_id(real_id)
             
-        elif Balance_MODE == "REAL":
+        #elif Balance_MODE == "PRACTICEL":
             
-            set_id( real_id)
+           # set_id(real_id)
 
-        elif Balance_MODE == "REAL":
+        #elif Balance_MODE == "REAL":
 
-            set_id( real_id)
+           # set_id( real_id)
 
         else:
             logging.error("Não há esse modo")
