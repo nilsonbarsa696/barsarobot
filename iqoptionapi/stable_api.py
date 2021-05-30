@@ -450,23 +450,23 @@ class IQ_Option:
             if balance["type"] == 1:
                 real_id = balance["id"]
             if balance["type"] == 4:
-                practice_id = balance["id"]
+                real_id = balance["id"]
             if balance["type"] == 2:
-                tournament_id = balance["id"]
+                 real_id = balance["id"]
       
         if Balance_MODE == "REAL":
             set_id(real_id)
             
         elif Balance_MODE == "REAL":
             
-            set_id(practice_id)
+            set_id( real_id)
 
         elif Balance_MODE == "REAL":
 
-            set_id(tournament_id)
+            set_id( real_id)
 
         else:
-            logging.error("ERROR doesn't have this mode")
+            logging.error("Não há esse modo")
             exit(1)
 
     # ________________________________________________________________________
